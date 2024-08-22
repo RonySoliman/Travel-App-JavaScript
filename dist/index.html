@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel App!</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Travel App!</h1>
+    </header>
+    <br>
+    <main>
+        <section class="section2">
+            <p class="text" style='font-size: 50px;'>Destination: </p>
+            <input id="input1" placeholder="Please enter a valid zipcode or city" type="text">
+
+            <p class="text" style='font-size: 50px;'>from: </p>
+            <input id="input2" placeholder="mm/dd/yy" type="text">
+
+            <p class="text" style='font-size: 50px;'>end: </p>
+            <input id="input3" placeholder="mm/dd/yy" type="text">
+
+            <button class="button" onClick="Client.formHandler()" type="button">save</button>
+            <button id="removeTripButton" class="button" type="button">delete</button>
+            <br><br>
+            <p>latitude: <div id="latitude"></div></p>
+            <p>longitude: <div id="longitude"></div></p>
+            <p>Zip Code: <div id="country"></div></p>
+            <p><div id="placeName"></div></p>
+            <p>your timer: <div id="countdown"></div></p>
+            <p>trip duration:<div id="LoT"></div></p>
+            <p> Weather:<br> <ul id="weather"></ul></p><br><hr>
+            <p style="display: none;"><div id="image" class="picz"></div></p>
+        </section>
+        <br>
+        <br>
+    </main>
+
+    <script>
+        window.addEventListener('load', () => {
+            document.getElementById('removeTripButton').addEventListener('click', () => Client.buttonHandler());
+        });
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>

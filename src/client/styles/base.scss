@@ -1,0 +1,92 @@
+main {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  background-image: url(/src/client/styles/Window2.jpg);
+  background-size: cover;
+  padding: 100px;
+  padding-top: 40px;
+}
+
+img {
+  max-width: 100%;
+  align-content: center;
+  max-height: fit-content;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  padding-bottom: 0;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#image {
+  padding-bottom: 60px;
+}
+.button {
+  background-color: palevioletred;
+  margin: 7%;
+  width: 20%;
+}
+
+.section2 {
+  font-family: monospace;
+  position: relative;
+  top: 10px;
+  width: 90%;
+  min-height: 1500px;
+  font-family: Sans-Serif;
+  font-size: 35px;
+  color:blue;
+  align-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 80);
+  background-color: grey;
+}
+
+div {
+  padding: 12px;
+}
+
+.text {
+  font-size: 30px;
+  font-family: Sans-Serif;
+  color: rgb(255, 255, 255);
+}
+#input1 {
+  font-size: 18px;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  outline: none;
+}
+#input2 {
+  font-size: 18px;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  outline: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#input3 {
+  font-size: 18px;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  outline: none;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 58px;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
